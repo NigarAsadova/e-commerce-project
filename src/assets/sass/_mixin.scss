@@ -1,0 +1,21 @@
+@use 'color';
+@mixin clearFix{
+    &:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+}
+
+@mixin button($bg-color: $black, $color : #fff){
+  display: inline-block;
+  font-weight: 700;
+  padding: 0 36px;
+  background-color: $bg-color;
+  color: $color;
+  height: 48px;
+  border-radius: 12px;
+  line-height: 48px;
+  transition: all 0.4s ease-in-out;
+  path{  transition: all 0.4s ease-in-out;}
+}
